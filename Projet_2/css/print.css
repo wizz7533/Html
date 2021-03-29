@@ -1,0 +1,27 @@
+@page {
+    margin: 1cm;
+}
+
+body>nav,
+body>footer,
+button {
+    display: none;
+}
+
+img,
+video {
+    max-width: 130px;
+}
+
+pre {
+    display: none;
+}
+
+body>main section {
+    margin-bottom: 2cm;
+    page-break-after: auto;
+}
+
+#col {
+    column-count: 2;
+}

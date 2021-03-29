@@ -1,0 +1,203 @@
+/*
+    dimension web : 
+    px      => pixel
+    em      => cadratin  : se calcul par rapport au em du conteneur
+    %       => pourcentage : calculé selon la taille du conteneur
+    vw vh   => view width & view height
+    rem     => cadratin racine : se calcul par rapport à la racine du user stylesheet
+*/
+
+
+/* déclarations variables couleurs et tailles */
+
+:root {
+    --rouge: darkred;
+    --smartPhoneP: ;
+}
+
+
+/* polices "importées" */
+
+@font-face {
+    font-family: 'MaskedHero';
+    src: url('../fonts/MaskedHero.eot');
+    src: url('../fonts/MaskedHero.eot') format('embedded-opentype'), url('../fonts/MaskedHero.woff2') format('woff2'), url('../fonts/MaskedHero.woff') format('woff'), url('../fonts/MaskedHero.ttf') format('truetype'), url('../fonts/MaskedHero.svg#MaskedHero') format('svg');
+}
+
+
+/* déclarations générales */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--rouge);
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--rouge);
+    color: var(--rouge);
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--rouge);
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cem {
+    font-size: 2em;
+}
+
+.crem {
+    font-size: 2rem;
+}
+
+
+/* déclarations maquette html */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+body>header h1 {
+    font-family: 'MaskedHero';
+}
+
+body>nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: var(--rouge);
+}
+
+body>nav ul li a {
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    background: var(--rouge);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body>nav ul li a:hover {
+    background: white;
+    color: var(--rouge);
+}
+
+body>main section article {
+    border: 1px solid rgba(0, 0, 139, 0.5);
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+body>main section article main figure {
+    margin: 0;
+    max-width: 100%;
+    background-color: rgba(0, 0, 139, 0.5);
+}
+
+body>main section article footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+
+/* media querie */
+
+@media(min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    body>main>section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    body>main section article {
+        width: calc(50% - 10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    body>main section article main {
+        height: 200px;
+        overflow-y: auto;
+    }
+    body>nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    body>nav ul li a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    body>main section article {
+        width: 23%;
+    }
+    /*
+    body > main article:nth-of-type(odd){
+        width: 60%;
+    }
+    */
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    /*
+    body > main article, body > main article:nth-of-type(odd){
+        width: 23%;
+    }
+    */
+}
+
+@media(min-width: 1600px) {
+    .container {
+        max-width: 1540px;
+    }
+}

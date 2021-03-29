@@ -1,0 +1,39 @@
+DAWAN - Formation développeur front-end
+n'hésitez pas à contribuer :-)
+
+- Roue des couleurs : 
+  - https://color.adobe.com/fr/create
+  - https://color.adobe.com/fr/create/color-wheel
+
+  - http://www.flatuicolorpicker.com/blue-rgba-color-model/
+  - http://www.colororacle.org/
+
+- contrast checker: 
+  - https://contrastchecker.online/
+
+
+- accessibilité : assurez-vous que votre contenu soit lisible par tous
+
+- PPP
+  - https://www.ustwo.com/blog/the-pixel-perfect-precision-handbook
+- Creative bloq
+  - https://www.creativebloq.com/tag/web-design
+- Alsa création
+  - https://www.alsacreations.com/
+- Smashing Mag
+  - https://www.smashingmagazine.com/
+  - de bonnes ressources pour de la veille design & dev front-end (EN)
+
+
+
+- https://css-tricks.com/
+
+web fonts
+  - https://everythingfonts.com/font-face
+    - font face generator
+  - https://www.dafont.com/fr/
+  - https://fonts.google.com/
+  - une valeur sûr pour choisir une typo sans se prendre la tête
+  - https://www.fontsquirrel.com/
+    - ça fait le même travail que font face generator
+    https://www.checkmycolours.com/

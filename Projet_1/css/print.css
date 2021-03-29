@@ -1,0 +1,6 @@
+body>header,
+body>nav,
+body>footer,
+button {
+    display: none;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation webmaster HTML CSS RWD</title>
+
+    <link rel="stylesheet" href="./css/style.css" media="screen" />
+    <link rel="stylesheet" href="./css/article.css" media="screen" />
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <script src="./js/functions.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Formation webmaster RWD - <small>HTML5 / CSS3</small></h1>
+    </header>
+    <nav>
+        <div class="toggle-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="./index.html" title="Retourner à l'accueil du site">
+                    <i class="fas fa-home"></i> Introduction
+                </a>
+            </li>
+            <li><a href="./article.html">Article</a></li>
+            <li><a href="./formulaire.html">Formulaire</a></li>
+            <li><a href="./css.html">Tricks CSS</a></li>
+            <li><a href="./exocv.html">CV</a></li>
+            <li><a href="./index.html">Intro</a></li>
+            <li><a href="./index.html">Intro</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h2>Les formulaires</h2>
+        <section>
+            <article>
+                <header>
+                    <h2>Élément de formulaires</h2>
+                </header>
+                <main>
+                    <p>
+                        Les formulaires servent à recueillir des informations.
+                    </p>
+                    <h3>Exemple de formulaire et d'éléments de formulaire</h3>
+                    <p>
+                        Un formulaire se déclare à l'aide de la balise form. Il possède des attributs. </br>
+                        Les plus importantts sont action et method.
+                    </p>
+                    <h3>Action</h3>
+                    <p>
+                        Cible la page de traitement du formulaire. Si action n'est pas défini, les données sont envoyées sur la même page ( mais il y a un rechargement)
+                    </p>
+                    <h3>Method</h3>
+                    <p>
+                        Méthode d'envoi des informations du formulaire. Il y en a deux: GET et POST.
+                    </p>
+                    <ul>
+                        <li>Get : Les données sont envoyées en variable dans l'url de la page de traitement.</li>
+                        <li>Post : les données sont envoyées en variable dans l'en-tête http.</li>
+                    </ul>
+                    <form method="get" class="formulaire">
+                        <p> Saisie du formulaire</p>
+                        <fieldset>
+                            <legend>Vos coordonnées</legend>
+                            <p>
+                                <label for="nom">Nom</label></br>
+                                <input type="text" name="nom" id="nom" placeholder="Entrez votre Nom" autofocus required />
+                            </p>
+                            <p>
+                                <label for="prenom">Prénom</label></br>
+                                <input type="text" name="prenom" id="prenom" placeholder="Entrez votre Prénom" autofocus required />
+                            </p>
+                            <p>
+                                <label for="email">email</label></br>
+                                <input type="email" name="email" id="email" placeholder="Entrez votre email" required />
+                            </p>
+                            <p>
+                                <label for="website">Votre site web</label></br>
+                                <input type="url" name="website" id="website" placeholder="Adresse de votre site" />
+                            </p>
+                            <p>
+                                <label for="telephone">Téléphone</label></br>
+                                <input type="tel" name="tel" id="tel" placeholder="N° de téléphone" />
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Votre vie personnelle</legend>
+                            <p>
+                                <label for="description">Décrivez vous</label>
+                                <textarea name="description" id="description" placeholder="Votre description ici ..." cols="40" rows="5"></textarea>
+                            </p>
+                            <p>
+                                <label for="fratrie">Nombre frère(s) et soeur(s)</label>
+                                <input type="number" name="fratrie" id="fratrie" min="0" max="20" value="0" />
+                            </p>
+                            <p>
+                                <label for="niveauAnglais">Niveau d'Anglais</label>
+                                <input type="range" name="niveauAnglais" id="niveauAnglais" min="0" max="20" step="0.5" value="10" />
+                                <span id="rangeAnglais" class="showRange">10</span>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                Votre Equipe
+                            </legend>
+                            <p>
+                                <label for="couleurEquipe">Couleur de votre équipe</label>
+                                <input type="color" name="couleurEquipe" id="couleurEquipe" />
+                            </p>
+                            <p>
+                                <label for="dateEquipe">Date création équipe</label>
+                                <input type="date" name="dateEquipe" id="dateEquipe" />
+                            </p>
+                            <p>
+                                <label for="cherche">Vérifier le nom de l'équipe</label>
+                                <input type="search" name="chercheEquipe" id="chercheEquipe" />
+                            </p>
+                            <p>
+                                Cochez les capacités de votre équipe(plusieurs choix possibles)
+                            </p>
+                            <p class="grpCB">
+                                <input type="checkbox" name="agilite" id="agilite" />
+                                <label for="agilite">Agilité</label>
+                                <input type="checkbox" name="force" id="force" />
+                                <label for="force">Force</label>
+                                <input type="checkbox" name="sagesse" id="sagesse" />
+                                <label for="sagesse">Sagesse</label>
+                                <input type="checkbox" name="intelligence" id="force" />
+                                <label for="intelligence">Intelligence</label>
+                            </p>
+                            <p>
+                                Veuillez indiquer votre tranche d'âge
+                            </p>
+                            <p class="grpCB">
+                                <input type="radio" name="age" id="moins15" value="moins15" />
+                                <label for="moins15">Moins de 15 ans</label>
+                                <input type="radio" name="age" id="medium15-25" value="medium15-25" />
+                                <label for="medium15-25">15 - 25 ans</label>
+                                <input type="radio" name="age" id="medium26-40" value="medium26-40" />
+                                <label for="medium26-40">26 - 40 ans</label>
+                                <input type="radio" name="age" id="plus40" value="plus40" />
+                                <label for="plus40">plus de 40 ans</label>
+
+                            </p>
+                            <p>
+                                <label for="specialite">Spécialisation de l'équipe</label>
+                                <select name="specialite" id="specialite">
+                                    <option value="" selected>Choisir une spécialité</option>
+                                    <optgroup label="Discrétion">
+                                        <option value="infiltration">Infiltration</option>
+                                        <option value="exfiltration">Exfiltration</option>
+                                    </optgroup>
+                                    <optgroup label="Force">
+                                        <option value="raid">Raid</option>
+                                    </optgroup>
+                                    <optgroup label="Intelligence">
+                                        <option value="securite">Sécurité</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <p class="submitButton">
+                            <!-- <input type="submit" name="subOK" value="Envoyer" /> -->
+                            <button type="submit" name="subOK" value="test">Envoyer</button>
+                            <button type="reset" name="subCancel">Effacer</button>
+                        </p>
+                    </form>
+                </main>
+                <footer>
+                    <a href="#">
+                        <button>Voir plus</button>
+                    </a>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">&copy;Dawan 2021</a></li>
+            <li><a href="#">Conditions Générale d'Utilisation</a></li>
+            <li><a href="#">Qui sommes-nous</a></li>
+        </ul>
+        <ul>
+            <li>
+                <a href="./index.html" title="Retourner à l'accueil du site">
+                    <i class="fas fa-home"></i> Accueil
+                </a>
+            </li>
+            <li><a href="#">lien</a></li>
+            <li><a href="#">lien</a></li>
+            <li><a href="#">lien</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">lien</a></li>
+            <li><a href="#">lien</a></li>
+            <li><a href="#">lien</a></li>
+            <li><a href="#">lien</a></li>
+        </ul>
+    </footer>
+</body>
+
+
+</html>

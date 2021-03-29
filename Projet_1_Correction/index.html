@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation webmaster HTML CSS RWD</title>
+
+    <link rel="stylesheet" href="./css/style.css" media="screen" />
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+</head>
+<body>
+    <header>
+        <h1>Formation webmaster RWD - <small>HTML5 / CSS3</small></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Intro</a></li>
+            <li><a href="./index.html">Intro</a></li>
+            <li><a href="./index.html">Intro</a></li>
+            <li><a href="./index.html">Intro</a></li>
+            <li><a href="./index.html">Intro</a></li>
+            <li><a href="./index.html">Intro</a></li>
+            <li><a href="./index.html">Intro</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h2>Généralités HTML / CSS3</h2>
+        <section>
+            <article>
+                <header>
+                    <h2>Problèmes CSS courants</h2>
+                </header>
+                <main>
+                    <p>
+                        Le calcul par défaut des tailles en CSS est content-box, 
+                        il est conseillé de le passer en border-box
+                    </p>
+                    <p>
+                        Les tailles calculées : si vous voulez utiliser 
+                        des cadratin (em), il est 
+                        plus sûr d'utiliser les cadratins racine (rem) 
+                        car il sont toujouts calculés
+                        par rapport au cadratin racine du user stylesheet 
+                        et non pas le cadratin calculé du conteneur
+                    </p>
+                </main>
+                <footer>
+                    <button>Voir plus</button>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Ajouter des polices de caractère</h2>
+                </header>
+                <main>
+                    <p>
+                        On utilisera les propriétés @font-face pour déclarer en CSS une polices
+                        de caractère dont les fichiers (eot, svg, ttf, woff, woff2) sont 
+                        hébergés sur le site pour ne pas forcer l'utilsateur à télécharger et installer 
+                        des fichiers.
+                    </p>
+                </main>
+                <footer>
+                    <button>Voir plus</button>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Différencier les feuilles de style</h2>
+                </header>
+                <main>
+                    <p>
+                        Il est possible d'associer plusieurs feuilles de style à une page html, 
+                        et de différencier les "media" (screen, print) qui les utiliseront.
+                    </p>
+                </main>
+                <footer>
+                    <button>Voir plus</button>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Inclure le responsive</h2>
+                </header>
+                <main>
+                    <p>
+                        Il est maintenant généralisé le fait 
+                        d'écrire son CSS responsive en mobile first,
+                        car la majorité des personne allant sur internet 
+                        le font à l'aide d'un smartphone ou d'une tablette.
+                    </p>
+                    <p>
+                        De plus il est plus simple de le faire de cette manière,
+                        beaucoup moins de CSS à réécrire selon les tailles d'affichage.
+                    </p>
+                </main>
+                <footer>
+                    <button>Voir plus</button>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h2>Images</h2>
+                </header>
+                <main>
+                    <figure>
+                        <img src="./images/poster-twitch-synthwave.jpg" 
+                            alt="poster twitch synthwave James White" />
+                        <figcaption>
+                            poster twitch synthwave James White
+                        </figcaption>
+                    </figure>
+                    <p>
+                        On peut intégrer directement des images à l'aide de la balise img, mais 
+                        en utlisant figure, on a à disposition une légende et de quoi 
+                        styliser la conteneur de l'image et non l'image elle-même
+                    </p>
+                </main>
+                <footer>
+                    <button>Voir plus</button>
+                </footer>
+            </article>
+        </section>
+        <!--
+        <div class="cem">
+            Bonjour
+            <div class="cem">
+                Nicolas
+            </div>
+        </div>
+        <div class="crem">
+            Bonjour
+            <div class="crem">
+                Nicolas
+            </div>
+        </div>
+        <div class="large">
+            <div class="left">Test</div>
+            <div class="left" style="width: 200px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Facere, iusto molestiae. Repellendus provident saepe 
+                cupiditate repudiandae aliquid fuga aliquam dolore amet, 
+                nobis unde voluptatem, cum eius ex. Possimus, recusandae 
+                placeat!
+            </div>
+            <div style="clear: both;"></div>
+            <div>
+                test
+            </div>
+        </div>
+        -->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

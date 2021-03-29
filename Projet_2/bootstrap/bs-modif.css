@@ -1,0 +1,34 @@
+:root {
+    --rouge: darkred;
+    --header-color: white;
+    --smartPhoneP: ;
+}
+
+p {
+    text-align: justify!important;
+}
+
+.bg-dark,
+.dropdown-menu,
+.btn-dark {
+    background-color: var(--rouge)!important;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.btn-dark {
+    border-color: var(--rouge)!important;
+}
+
+.dropdown-item,
+.btn-dark {
+    color: white;
+}
+
+.dropdown-item:hover,
+.btn-dark:hover {
+    color: var(--rouge)!important;
+    background-color: white!important;
+}
