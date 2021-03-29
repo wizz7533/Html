@@ -1,0 +1,52 @@
+#logo_style {
+    position: absolute;
+    height: 10vh;
+    width: 15vh;
+    bottom: 15px;
+    right: 15px;
+    object-position: 1;
+}
+
+@keyframes slidein {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    50% {
+        left: 0;
+        opacity: 1;
+    }
+    75% {
+        left: 40vw;
+        opacity: 0;
+    }
+    89% {
+        left: 40vw;
+        opacity: 0;
+    }
+    90% {
+        left: 0;
+        opacity: 0, 2;
+    }
+    93% {
+        left: 0;
+        opacity: 0, 2;
+    }
+    97% {
+        left: 0;
+        opacity: 0, 5;
+    }
+    100% {
+        left: 0;
+        opacity: 0, 8;
+    }
+}
+
+.truck_to_go {
+    animation: slidein 15s ease-in 2s infinite;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    display: block;
+    position: relative;
+}

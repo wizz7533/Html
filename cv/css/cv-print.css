@@ -1,0 +1,140 @@
+/* définition de la marge 1cm en fonction du papier de sortie */
+
+@page {
+    margin: 1cm;
+}
+
+:root {
+    --smart-grey: #404040;
+    --dark-grey: #252525;
+}
+
+
+/* Elements n'apparaissant pas au print */
+
+body>nav,
+body>footer,
+button {
+    display: none;
+}
+
+h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    font-weight: lighter;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+h4 {
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    font-weight: initial;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+h5 {
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    font-weight: normal;
+    font-size: 0.8em;
+    line-height: 1;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+.card-text {
+    font-size: 3em bold;
+}
+
+#avatar_style {
+    position: relative;
+    height: 10em;
+    border-radius: 0 50px 0;
+}
+
+#logo_style {
+    position: relative;
+    top: 2em;
+}
+
+#banner {
+    column-count: 3;
+    justify-content: space-between;
+    text-align: center;
+    align-items: flex-end;
+    margin: 0;
+    top: 0;
+    left: O;
+    margin-bottom: 5em;
+}
+
+.item-banner {
+    position: sticky;
+    margin: 0;
+    height: 100%;
+    line-height: 0.95;
+}
+
+.img-logo {
+    position: relative;
+    margin: auto;
+    padding-top: 3vh;
+    max-height: 7.5vh;
+}
+
+.list-group {
+    position: relative;
+    margin: 0;
+    font-size: .9em;
+}
+
+.img-techno {
+    position: relative;
+    margin: auto;
+    min-width: 4vw;
+    max-height: 3vh;
+    padding-top: 3vh;
+}
+
+pre {
+    display: none;
+}
+
+.card {
+    margin-bottom: 5px;
+    page-break-before: auto;
+    border-top: 2px solid var(--dark-grey);
+}
+
+.card>.card-2 {
+    column-count: 2;
+    -webkit-column-break-after: region;
+}
+
+.card-2 {
+    border-top: 0.5px solid var(--smart-grey);
+    text-align: center;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+.list-inline>li {
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.break {
+    page-break-after: always;
+}
+
+#footer {
+    position: absolute;
+    top: 15vh;
+    left: 65vw;
+    text-align: center;
+}
