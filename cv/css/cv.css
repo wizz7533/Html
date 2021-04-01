@@ -12,6 +12,7 @@
 :root {
     --smart-grey: #404040;
     --dark-grey: #252525;
+    --whithe:  rgba(240, 240, 240, 0.8);
 }
 
 
@@ -41,7 +42,7 @@ body {
 
 /* body>header {
     display:flex;
-    /* flex-wrap:nowrap; */
+    flex-wrap:nowrap;
 } */
 
 h1 {
@@ -102,3 +103,75 @@ p {
 
 
 /* media querie */
+
+@media(min-width: 576px) {
+
+} 
+
+@media(min-width: 768px) {
+    #avatar_style {
+
+        width: 17vh;
+        height: 17vh;
+    }
+    
+    #logo_style {
+    
+        width: 17vh;
+        height: 17vh;
+    }
+    #banner h1 {
+        font-size: 3vw;
+    }
+    
+    #banner h2 {
+        font-size: 3.5vw;
+    }
+    
+    #banner p {
+        font-size: 2vw;
+    }
+}
+
+@media(min-width: 992px) {
+    #avatar_style {
+
+        width: 20vh;
+        height: 20vh;
+    }
+    
+    #logo_style {
+    
+        width: 20vh;
+        height: 20vh;
+    }
+    #banner h1 {
+        font-size: 2.5vw;
+    }
+    
+    #banner h2 {
+        font-size: 3vw;
+    }
+    
+    #banner p {
+        font-size: 1.5vw;
+    }
+}
+
+@media(min-width: 1200px) {
+    #avatar_style {
+
+        width: 25vh;
+        height: 25vh;
+    }
+    
+    #logo_style {
+    
+        width: 25vh;
+        height: 25vh;
+    }
+}
+
+@media(min-width: 1600px) {
+
+}

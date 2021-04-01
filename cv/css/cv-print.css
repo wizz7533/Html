@@ -72,6 +72,10 @@ p {
     margin-bottom: 5em;
 }
 
+#civi {
+    padding-top: 10px;
+}
+
 .item-banner {
     position: sticky;
     margin: 0;
